@@ -120,14 +120,19 @@
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
-                align-items: flex-end;
+                align-items: stretch; /* LOGO sola, menü sağa izin verir */
+            }
+
+            .navbar .logo {
+                text-align: left; /* Logo sola hizalanır */
             }
 
             .navbar nav {
                 flex-direction: column;
                 gap: 10px;
-                margin-top: 20px;     /* LOGO İLE ARAYA BOŞLUK */
-                margin-right: 10px;    /* SOLA YAKIN HİZALAMA */
+                margin-top: 20px;   /* Logo ile menü arasında boşluk */
+                align-self: flex-end; /* Menü sağa hizalanır */
+                margin-right: 10px;
             }
 
             .container {
